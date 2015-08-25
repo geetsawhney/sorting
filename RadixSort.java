@@ -105,10 +105,31 @@ public class RadixSort {
 	public static void main(String[] args) {
 
 
-		int input[]={10,56,2,488,1,6,3,5,87,1,3,6,5,64,3,6,9,6,686,3,1,5,5,595,65,1255,56,4,65,468,456,4,6,489,23,63,365,4};
-	
-		input=radixSort_2(input);
-		display(input);
+//		int input[]={10,56,2,488,1,6,3,5,87,1,3,6,5,64,3,6,9,6,686,3,1,5,5,595,65,1255,56,4,65,468,456,4,6,489,23,63,365,4};
+		int input1[]=new int[1000];
+		int input2[]=new int[1000];
+		for(int i=0;i<input1.length;i++)
+		{
+			input1[i]=input1.length-i;
+			input2[i]=input2.length-i;
+			
+		}
+		
+		long start1=System.currentTimeMillis();
+//		radixSort_1(input1);
+		input2=radixSort_2(input2);
+		long end1=System.currentTimeMillis();
+		System.out.println("first= "+(end1-start1));
+		
+		long start2=System.currentTimeMillis();
+		QuickSort.quickSort(input1, 0, input1.length-1);
+		long end2=System.currentTimeMillis();
+		
+		
+		
+		
+		System.out.println("second= "+(end2-start2));
+
 
 	}
 }
