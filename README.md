@@ -1,2 +1,2 @@
 # Sorting Algorithms
-All the fundamental sorting algorothms!
+All the fundamental sorting algorithms!
