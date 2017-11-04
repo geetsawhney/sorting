@@ -1,5 +1,3 @@
-package sorting;
-
 public class ShellSort {
 
 	public static void shellSort(int input[])
